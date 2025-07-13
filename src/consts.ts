@@ -1,12 +1,12 @@
 import type { IconMap, SocialLink, Site } from '@/types'
 
 export const SITE: Site = {
-  title: 'astro-erudite',
+  title: 'Rango dos Pia',
   description:
-    'astro-erudite is a opinionated, unstyled blogging template—built with Astro, Tailwind, and shadcn/ui.',
-  href: 'https://astro-erudite.vercel.app',
-  author: 'jktrn',
-  locale: 'en-US',
+    'Blog especializado em avaliação de lanches de rua de Londrina. Descubra os melhores lugares para comer na cidade!',
+  href: 'https://rango-dos-pia.vercel.app',
+  author: 'Pedro & Kalebe',
+  locale: 'pt-BR',
   featuredPostCount: 2,
   postsPerPage: 3,
 }
@@ -14,29 +14,29 @@ export const SITE: Site = {
 export const NAV_LINKS: SocialLink[] = [
   {
     href: '/blog',
-    label: 'blog',
+    label: 'avaliações',
   },
   {
     href: '/authors',
-    label: 'authors',
+    label: 'avaliadores',
   },
   {
     href: '/about',
-    label: 'about',
+    label: 'sobre',
   },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    href: 'https://github.com/jktrn',
-    label: 'GitHub',
+    href: 'https://instagram.com/rangodospia',
+    label: 'Instagram',
   },
   {
-    href: 'https://twitter.com/enscry',
-    label: 'Twitter',
+    href: 'https://tiktok.com/@rangodospia',
+    label: 'TikTok',
   },
   {
-    href: 'mailto:jason@enscribe.dev',
+    href: 'mailto:contato@rangodospia.com',
     label: 'Email',
   },
   {
@@ -50,6 +50,8 @@ export const ICON_MAP: IconMap = {
   GitHub: 'lucide:github',
   LinkedIn: 'lucide:linkedin',
   Twitter: 'lucide:twitter',
+  Instagram: 'lucide:instagram',
+  TikTok: 'lucide:video',
   Email: 'lucide:mail',
   RSS: 'lucide:rss',
 }

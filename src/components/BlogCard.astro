@@ -50,6 +50,34 @@ const subpostCount = !isSubpost(entry.id) ? await getSubpostCount(entry.id) : 0
       <h3 class="mb-1 text-lg font-medium">{entry.data.title}</h3>
       <p class="text-muted-foreground mb-2 text-sm">{entry.data.description}</p>
 
+      {/* Informações específicas da avaliação */}
+      {
+        'estabelecimento' in entry.data && (
+          <div class="mb-2 flex items-center gap-2">
+            <Badge variant="outline" className="text-xs">
+              <Icon name="lucide:store" class="size-3 mr-1" />
+              {entry.data.estabelecimento}
+            </Badge>
+            {
+              'nota' in entry.data && (
+                <Badge variant="default" className="text-xs">
+                  <Icon name="lucide:star" class="size-3 mr-1" />
+                  {entry.data.nota}/10
+                </Badge>
+              )
+            }
+            {
+              'preco' in entry.data && (
+                <Badge variant="secondary" className="text-xs">
+                  <Icon name="lucide:circle-dollar-sign" class="size-3 mr-1" />
+                  R$ {entry.data.preco.toFixed(2)}
+                </Badge>
+              )
+            }
+          </div>
+        )
+      }
+
       <div
         class="text-muted-foreground mb-2 flex flex-wrap items-center gap-x-2 text-xs"
       >

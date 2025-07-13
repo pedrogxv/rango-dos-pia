@@ -1,9 +1,10 @@
 ---
-name: 'Project A'
-description: 'This is an example project description! You should replace this with a description of your own project.'
-tags: ['Framework A', 'Library B', 'Tool C', 'Resource D']
-image: '../../../public/static/1200x630.png'
-link: 'https://example.com'
-startDate: '2024-01-01'
-endDate: '2024-02-01'
+name: 'Boteco do Zé'
+description: 'Um dos melhores lugares para hambúrgueres artesanais em Londrina. Ambiente descontraído e preços justos.'
+tags: ['hamburguer', 'artesanal', 'boteco', 'centro']
+image: '/'
+link: 'https://instagram.com/boteconze'
+startDate: 2023-01-01
 ---
+
+O Boteco do Zé é um estabelecimento tradicional no centro de Londrina, conhecido por seus hambúrgueres artesanais e ambiente acolhedor. Localizado na Rua das Flores, é um dos lugares favoritos dos frequentadores do blog.

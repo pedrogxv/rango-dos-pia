@@ -13,6 +13,12 @@ const blog = defineCollection({
       tags: z.array(z.string()).optional(),
       authors: z.array(z.string()).optional(),
       draft: z.boolean().optional(),
+      // Campos específicos para avaliações de lanches
+      estabelecimento: z.string().optional(),
+      endereco: z.string().optional(),
+      preco: z.number(),
+      nota: z.number().min(1).max(10),
+      categoria: z.enum(['lanche', 'pastel', 'cachorro-quente', 'pizza', 'outros']),
     }),
 })
 
@@ -29,6 +35,8 @@ const authors = defineCollection({
     github: z.string().url().optional(),
     linkedin: z.string().url().optional(),
     discord: z.string().url().optional(),
+    instagram: z.string().url().optional(),
+    tiktok: z.string().url().optional(),
   }),
 })
 

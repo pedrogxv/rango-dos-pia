@@ -15,54 +15,26 @@ const blog = await getRecentPosts(SITE.featuredPostCount)
   <section>
     <div class="rounded-lg border">
       <div class="flex flex-col space-y-1.5 p-6">
-        <h3 class="text-3xl leading-none font-medium">er·u·dite</h3>
+        <h3 class="text-3xl leading-none font-medium">Rango dos Pia</h3>
         <p class="text-muted-foreground text-sm">
-          /ˈer(y)əˌdīt/ &bull; <span class="font-medium">adjective</span>
+          Avaliações de lanches de rua de Londrina - Paraná
         </p>
       </div>
       <div class="p-6 pt-0">
-        <p class="text-muted-foreground mb-2 text-sm">
-          astro-erudite is an opinionated, unstyled static blogging template
-          built with <Link
-            href="https://astro.build"
-            class="text-foreground"
-            external
-            underline>Astro</Link
-          >, <Link
-            href="https://tailwindcss.com"
-            class="text-foreground"
-            external
-            underline>Tailwind</Link
-          >, and <Link
-            href="https://ui.shadcn.com"
-            class="text-foreground"
-            external
-            underline>shadcn/ui</Link
-          >. Extraordinarily loosely based on the <Link
-            href="https://astro-micro.vercel.app/"
-            class="text-foreground"
-            external
-            underline>Astro Micro</Link
-          > theme.
+        <!-- <p class="text-muted-foreground mb-2 text-sm">
+          Bem-vindo ao <strong>Rango dos Pia</strong>! Somos o Pedro e o Kalebe, especialistas em descobrir e avaliar os melhores lanches de rua de Londrina. 
+          Desde hambúrgueres artesanais até pastéis tradicionais, passando por cachorros-quentes e pizzas, 
+          nossa missão é te ajudar a encontrar onde comer bem sem gastar muito!
         </p>
         <p class="text-muted-foreground text-sm">
-          To use this template, check out the <Link
-            href="https://github.com/jktrn/astro-erudite"
-            class="text-foreground"
-            underline
-            external>GitHub</Link
-          > repository. To learn more about why this template exists, read this blog
-          post: <Link
-            href="/blog/the-state-of-static-blogs"
-            class="text-foreground"
-            underline>The State of Static Blogs in 2024</Link
-          >.
-        </p>
+          Cada avaliação é feita com muito carinho e honestidade, sempre considerando sabor, preço, 
+          ambiente e atendimento. Siga o blog para descobrir os tesouros gastronômicos escondidos pelas ruas de Londrina! 🍔🌭🥟
+        </p> -->
       </div>
     </div>
   </section>
   <section class="flex flex-col gap-y-4">
-    <h2 class="text-2xl font-medium">Latest posts</h2>
+    <h2 class="text-2xl font-medium">Últimas Avaliações</h2>
     <ul class="flex flex-col gap-y-4">
       {
         blog.map((post) => (
@@ -77,7 +49,7 @@ const blog = await getRecentPosts(SITE.featuredPostCount)
         href="/blog"
         class={buttonVariants({ variant: 'ghost' }) + ' group'}
       >
-        See all posts <span
+        Ver todas as avaliações <span
           class="ml-1.5 transition-transform group-hover:translate-x-1"
           >&rarr;</span
         >

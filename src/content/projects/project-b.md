@@ -1,9 +1,10 @@
 ---
-name: 'Project B'
-description: 'This is an example project description! You should replace this with a description of your own project.'
-tags: ['Framework A', 'Library B', 'Tool C', 'Resource D']
-image: '../../../public/static/1200x630.png'
-link: 'https://example.com'
-startDate: '2024-02-01'
-endDate: '2024-03-01'
+name: 'Pastelaria da Dona Maria'
+description: 'Pastéis tradicionais feitos na hora com massa caseira. Um dos melhores lugares para pastéis em Londrina.'
+tags: ['pastel', 'tradicional', 'caseiro', 'centro']
+image: '/'
+link: 'https://instagram.com/pastelariadonamaria'
+startDate: 2022-06-01
 ---
+
+A Pastelaria da Dona Maria é um estabelecimento familiar que existe há mais de 20 anos em Londrina. Conhecida por seus pastéis de massa caseira e recheios tradicionais, é um dos lugares mais queridos da cidade.

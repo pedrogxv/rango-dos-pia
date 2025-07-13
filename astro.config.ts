@@ -23,7 +23,7 @@ export default defineConfig({
   site: 'https://astro-erudite.vercel.app',
   integrations: [
     expressiveCode({
-      themes: ['github-light', 'github-dark'],
+      themes: ['rose-pine-dawn', 'plastic'],
       plugins: [pluginCollapsibleSections(), pluginLineNumbers()],
       useDarkModeMediaQuery: false,
       themeCssSelector: (theme) => `[data-theme="${theme.name.split('-')[1]}"]`,
@@ -102,8 +102,8 @@ export default defineConfig({
         rehypePrettyCode,
         {
           theme: {
-            light: 'github-light',
-            dark: 'github-dark',
+            light: 'rose-pine-dawn',
+            dark: 'plastic',
           },
         },
       ],

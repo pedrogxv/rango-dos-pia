@@ -10,35 +10,81 @@ const projects = await getAllProjects()
 ---
 
 <Layout class="max-w-3xl">
-  <PageHead slot="head" title="About" />
-  <Breadcrumbs items={[{ label: 'About', icon: 'lucide:info' }]} />
+  <PageHead slot="head" title="Sobre" />
+  <Breadcrumbs items={[{ label: 'Sobre', icon: 'lucide:info' }]} />
 
   <section>
     <div class="min-w-full">
       <div class="prose mb-8">
+        <h1>Sobre o Rango dos Pia</h1>
+        
         <p class="mt-0">
-          astro-erudite is an opinionated, unstyled static blogging template
-          that prioritizes simplicity and performance, built with <Link
-            href="https://astro.build"
-            external
-            underline>Astro</Link
-          >, <Link href="https://tailwindcss.com" external underline
-            >Tailwind</Link
-          >, and <Link href="https://ui.shadcn.com" external underline
-            >shadcn/ui</Link
-          >. It provides a clean foundation for your content while being
-          extremely easy to customize.
+          O <strong>Rango dos Pia</strong> nasceu da paixão por comida de rua e da vontade de compartilhar 
+          as melhores descobertas gastronômicas de Londrina. Somos dois especialistas em descobrir e avaliar 
+          lanches de rua, sempre com honestidade e transparência.
+        </p>
+        
+        <h2>Nossa Missão</h2>
+        <p>
+          Queremos ajudar você a descobrir onde comer bem em Londrina sem gastar muito. 
+          Acreditamos que a melhor comida muitas vezes está nos lugares mais simples e autênticos.
+        </p>
+
+        <h2>Nossos Avaliadores</h2>
+        <p>
+          <strong>Pedro</strong> - Especialista em hambúrgueres, pastéis e cachorros-quentes. 
+          Morador de Londrina há mais de 10 anos, sempre em busca dos melhores sabores da cidade.
         </p>
         <p>
-          To learn more about the philosophy behind this template, check out the
-          following blog post: <Link
-            href="/blog/the-state-of-static-blogs"
-            underline>The State of Static Blogs in 2024</Link
-          >.
+          <strong>Kalebe</strong> - Especialista em pizzas artesanais, cachorros-quentes gourmet e comida árabe. 
+          Apaixonado por sabores autênticos e sempre em busca de experiências gastronômicas únicas.
+        </p>
+
+        <h2>Como Funciona Nossa Avaliação</h2>
+        <p>
+          Cada estabelecimento é avaliado considerando os seguintes critérios:
+        </p>
+        
+        <ul>
+          <li><strong>Sabor (0-10)</strong>: Qualidade dos ingredientes, tempero e combinação de sabores</li>
+          <li><strong>Apresentação (0-10)</strong>: Visual do prato e cuidado na montagem</li>
+          <li><strong>Ambiente (0-10)</strong>: Limpeza, conforto e atmosfera do local</li>
+          <li><strong>Atendimento (0-10)</strong>: Cordialidade, rapidez e eficiência</li>
+          <li><strong>Custo-Benefício</strong>: Relação entre preço e qualidade</li>
+        </ul>
+
+        <h2>Nossas Categorias</h2>
+        <p>
+          Avaliamos diferentes tipos de lanches:
+        </p>
+        
+        <ul>
+          <li>🍔 <strong>Hambúrgueres</strong>: Artesanais, gourmet e tradicionais</li>
+          <li>🥟 <strong>Pastéis</strong>: De carne, queijo, frango e sabores especiais</li>
+          <li>🌭 <strong>Cachorros-Quentes</strong>: Tradicionais e gourmet</li>
+          <li>🍕 <strong>Pizzas</strong>: Fatias e pizzas inteiras</li>
+          <li>🍟 <strong>Outros</strong>: Coxinhas, esfihas, sanduíches e muito mais</li>
+        </ul>
+
+        <h2>Transparência</h2>
+        <p>
+          Todas as nossas avaliações são independentes e honestas. Não aceitamos pagamento 
+          ou benefícios em troca de avaliações positivas. Nossa credibilidade é nosso maior patrimônio.
+        </p>
+
+        <h2>Entre em Contato</h2>
+        <p>
+          Tem uma sugestão de lugar para avaliarmos? Quer compartilhar sua experiência? 
+          Entre em contato conosco através do email <Link href="mailto:contato@rangodospia.com" underline>contato@rangodospia.com</Link> 
+          ou pelas nossas redes sociais!
+        </p>
+
+        <p>
+          <strong>Bom apetite e até a próxima avaliação! 🍽️</strong>
         </p>
       </div>
 
-      <h2 class="mb-4 text-2xl font-medium">Example Projects Listing</h2>
+      <h2 class="mb-4 text-2xl font-medium">Lugares Favoritos</h2>
       <div class="flex flex-col gap-4">
         {projects.map((project) => <ProjectCard project={project} />)}
       </div>
